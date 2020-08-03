@@ -1,0 +1,257 @@
+@font-face {
+    font-family : "Anders";
+    src         : url("../fonts/Anders.ttf") format("truetype");
+    font-weight : normal;
+    font-style  : normal;
+}
+::-moz-selection{
+  color: #1F2833;
+  background-color: #66FCF1;
+}
+::selection{
+  color: #1F2833;
+  background-color: #66FCF1;
+}
+.home-div {
+  background: rgb(169,169,169,0.2);
+  margin: 0 auto;
+  
+}
+
+.register-block {
+  background: #e2e6e7;
+  margin-top: 5%;
+  width: 50rem;
+}
+
+.register-block h2 {
+  padding: 1rem;
+}
+
+button, .nappi {
+  margin-bottom: 1rem;
+  background-color: #1F2833;
+  border:0.1em solid #1F2833;
+  color: white;
+}
+button:hover, .nappi:hover{
+  margin-bottom: 1rem;
+  border:0.1em solid #66FCF1;
+  background-color: #1F2833;
+}
+@media only screen and (max-width: 800px) {
+  .register-block {
+    width: 100%;
+  }
+}
+.valistus {
+  width: 10rem;
+}
+
+.tarjous-kuvaus {
+  font-size: 1.4rem;
+  min-height: 20rem;
+  padding: 1rem;
+}
+
+.tarjous-tarjous a {
+  max-width: 10rem;
+  width: 10rem;
+}
+
+/* --------------------
+        NAVBAR
+-----------------------*/
+.nav-link {
+  transition: 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+  border-top: 0.1em solid transparent ;
+  border-bottom: 0.1em solid transparent ;
+  padding: 1em 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.nav-link:hover {
+  border-top: 0.1em solid #66FCF1;
+  border-bottom: 0.1em solid #66FCF1;
+  padding: 1em 0; 
+}
+.nav-link:active{
+  color:#66FCF1;
+}
+#sbd {
+  font-family: "Anders", sans-serif;
+  color:#66FCF1;
+}
+
+/* --------------------
+    COLOURS FONTS ETC
+-----------------------*/
+body{
+  height: 100vh;
+  background: url("../images/tausta.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+h1{
+  font-family: 'Anders', sans-serif;
+  color: #66FCF1;
+  
+}
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #C5C6C7;
+  text-transform: uppercase;
+}
+hr{
+  border-color: #66FCF1;
+}
+.ilmoitus-div{
+  background: rgb(169,169,169,0.2);
+}
+.fas{
+  color:#66FCF1;
+}
+.white{
+  color:#C5C6C7;
+}
+a{
+  color: #C5C6C7;
+}
+a:hover{
+  color: #66FCF1;
+}
+.shade{
+  -moz-box-shadow: 0px 5px 10px rgba(220,220,220 0.1);
+  box-shadow: 0px 5px 10px rgba(220,220,220 0.1);
+}
+
+/* --------------------
+        FORMS
+-----------------------*/
+input[type="text"],
+.form-control,
+{
+  border: 1px solid #1F2833;
+  -webkit-box-shadow: none;
+  box-shadow:none;
+  color:#C5C6C7; 
+}
+input[type="text"]:focus,
+.form-control:focus,
+{
+  border: 1px solid #66FCF1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color:#C5C6C7; 
+}
+
+.custom-select{
+  border: 1px solid #1F2833;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.custom-select:hover{
+  border: 1px solid #66FCF1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.kuvaus {
+  width: 100%;
+  border: 1px solid #1F2833;
+}
+.kuvaus:focus {
+  border: 1px solid #66FCF1;
+}
+label{
+  color:#C5C6C7;
+}
+.card{
+  padding-top: 2em;
+  background: rgb(169,169,169,0.2);
+}
+.darkgrey{
+  background-color:#1F2833;
+}
+.rasti{
+  color:white;
+  font-size: 1em;
+}
+
+/* --------------------
+        TABLES
+-----------------------*/
+td, th{
+  color:#C5C6C7;
+}
+td:empty{
+  display: none;
+}
+/* --------------------
+        LOGO
+-----------------------*/
+.circle-responsive {
+  background: transparent;
+  border: 0.2em solid #66FCF1;
+  border-radius: 50%;
+  height: 15em;
+  width: 15em;
+}
+.circle-content {
+  color: #fff;
+  float: left;
+  line-height: 1;
+  margin-top: -0.5em;
+  padding-top: 40%;
+  text-align: center;
+  width: 100%;
+}
+.logo-teksti{
+  font-size: 3.5em;
+}
+
+/* --------------------
+      SCROLL TOP
+-----------------------*/
+#scroll-top {
+  display: inline-block;
+  background-color: #45A29E;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#scroll-top::after {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+  
+}
+#scroll-top:hover {
+  cursor: pointer;
+  background-color: #36827e;
+}
+#scroll-top:active {
+  background-color: #36827e;
+}
+#scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.fa-arrow-circle-up{
+  color: white;
+}
